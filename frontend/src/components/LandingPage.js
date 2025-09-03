@@ -165,7 +165,7 @@ const LandingPage = () => {
       {/* Benefits Section */}
       <section className="benefits-section">
         <div className="section-container">
-          <h2 className="section-title">Why Build With YEYO?</h2>
+          <h2 className="section-title">Focused on your startup success</h2>
           <div className="benefits-grid">
             <div className="benefit-card">
               <h3>Co-Founders on Day One</h3>
