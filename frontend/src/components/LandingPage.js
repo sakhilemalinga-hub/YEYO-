@@ -190,19 +190,19 @@ const LandingPage = () => {
       {/* Numbers Section */}
       <section className="numbers-section">
         <div className="section-container">
-          <h2 className="section-title">YEYO by the Numbers</h2>
+          <h2 className="section-title">Essential metrics for venture success</h2>
           <div className="numbers-grid">
             <div className="number-card">
               <span className="number">$1.5M</span>
-              <span className="label">seed powering our first ventures</span>
+              <span className="label">seed capital powering our first ventures</span>
             </div>
             <div className="number-card">
               <span className="number">$75M</span>
               <span className="label">targeting combined exits</span>
             </div>
             <div className="number-card">
-              <span className="number">50</span>
-              <span className="label">certified AI engineers in studio</span>
+              <span className="number">50+</span>
+              <span className="label">certified AI engineers in studio talent pool</span>
             </div>
             <div className="number-card">
               <span className="number">3</span>
