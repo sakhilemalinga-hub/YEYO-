@@ -131,7 +131,7 @@ const LandingPage = () => {
       {/* Process Section */}
       <section className="process-section">
         <div className="section-container">
-          <h2 className="section-title">The YEYO Venture Studio Model</h2>
+          <h2 className="section-title">Transforming ideas into Series-A companies</h2>
           <div className="process-steps">
             <div className="process-step">
               <div className="step-number">1</div>
