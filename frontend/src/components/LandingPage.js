@@ -125,7 +125,7 @@ const LandingPage = () => {
 
       {/* Stats Bar */}
       <div className="stats-bar">
-        <p>Backed by 20+ investors • 9 design partners • 3 studio ventures in build</p>
+        <p><strong>Backed by 20+ investors</strong> • <strong>9 design partners</strong> • <strong>3 studio ventures in build</strong></p>
       </div>
 
       {/* Process Section */}
