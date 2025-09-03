@@ -140,7 +140,7 @@ const FounderRegistration = () => {
                 <option value="">Select current stage</option>
                 <option value="Idea Stage">Idea Stage</option>
                 <option value="MVP Development">MVP Development</option>
-                <option value="Early Traction">Early Traction (< $5K MRR)</option>
+                <option value="Early Traction">Early Traction (&lt; $5K MRR)</option>
                 <option value="Growth Stage">Growth Stage ($5K+ MRR)</option>
                 <option value="Scaling">Scaling ($50K+ MRR)</option>
               </select>
