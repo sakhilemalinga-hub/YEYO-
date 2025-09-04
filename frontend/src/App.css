@@ -323,7 +323,7 @@ body {
 /* CTA Section */
 .cta-section {
   padding: 6rem 0;
-  background: #2563eb;
+  background: #ff3c01;
   text-align: center;
   color: white;
 }
@@ -337,7 +337,7 @@ body {
 
 .cta-section .btn-primary {
   background: white;
-  color: #2563eb;
+  color: #ff3c01;
   font-size: 1rem;
   padding: 1rem 2rem;
   font-weight: 500;
