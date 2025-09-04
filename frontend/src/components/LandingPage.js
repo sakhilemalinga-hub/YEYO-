@@ -24,8 +24,14 @@ const EmailGateModal = ({ isOpen, onOpenChange }) => {
       onOpenChange(false);
       setEmail('');
       
-      // Trigger download (placeholder for now)
-      window.open(response.data.download_url, '_blank');
+      // Trigger PDF download
+      const link = document.createElement('a');
+      link.href = response.data.download_url;
+      link.download = 'YEYO LAB Building Africa\'s AI-SaaS Exit Engine.pdf';
+      link.target = '_blank';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
     } catch (error) {
       toast.error('Failed to process request. Please try again.');
     } finally {
