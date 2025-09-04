@@ -511,10 +511,6 @@ body {
 }
 
 @media (max-width: 480px) {
-  .hero-logo img {
-    height: 50px;
-  }
-  
   .hero-text h1 {
     font-size: 2rem;
   }
