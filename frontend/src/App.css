@@ -63,7 +63,7 @@ body {
 }
 
 .btn-primary {
-  background: #2563eb;
+  background: #ff3c01;
   color: white;
   padding: 1rem 1.5rem;
   border: none;
@@ -79,7 +79,7 @@ body {
 }
 
 .btn-primary:hover {
-  background: #1d4ed8;
+  background: #e6350a;
   transform: translateY(-1px);
 }
 
