@@ -19,21 +19,35 @@ body {
 
 /* Landing Page Styles */
 .hero-section {
-  background: #ffffff;
+  background: linear-gradient(rgba(59, 130, 246, 0.1), rgba(147, 197, 253, 0.2)), url('https://images.unsplash.com/photo-1526560244950-1a3c1ace48f9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwyfHxkaXZlcnNlJTIwYnVzaW5lc3MlMjB0ZWFtfGVufDB8fHx8MTc1NjkyOTM2N3ww&ixlib=rb-4.1.0&q=85') center/cover no-repeat;
   padding: 4rem 0 6rem;
   min-height: 85vh;
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: 1;
 }
 
 .hero-content {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-text h1 {
