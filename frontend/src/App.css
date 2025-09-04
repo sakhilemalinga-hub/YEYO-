@@ -453,7 +453,7 @@ body {
 
 .google-login-btn {
   width: 100%;
-  background: #2563eb;
+  background: #ff3c01;
   color: white;
   padding: 0.875rem 1rem;
   border: none;
@@ -470,7 +470,7 @@ body {
 }
 
 .google-login-btn:hover {
-  background: #1d4ed8;
+  background: #e6350a;
 }
 
 /* Responsive Design */
