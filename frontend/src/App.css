@@ -130,17 +130,7 @@ body {
   background: #f8fafc;
 }
 
-.hero-image {
-  position: relative;
-}
-
-.hero-image img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-}
+/* Remove hero image styles as we're using background now */
 
 .stats-bar {
   background: #f8fafc;
