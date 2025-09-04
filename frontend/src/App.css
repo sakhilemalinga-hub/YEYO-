@@ -491,10 +491,8 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .hero-content {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    text-align: center;
+  .hero-logo img {
+    height: 60px;
   }
   
   .hero-text h1 {
