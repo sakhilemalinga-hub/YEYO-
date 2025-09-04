@@ -244,8 +244,8 @@ async def subscribe_email(email_data: dict):
         subscription_dict = prepare_for_mongo(subscription.dict())
         await db.email_subscriptions.insert_one(subscription_dict)
     
-    # Return download link (for now just a placeholder)
-    return {"download_url": "https://example.com/yeyo-thesis.pdf", "message": "Thank you! Your download will begin shortly."}
+    # Return actual thesis document download link
+    return {"download_url": "https://customer-assets.emergentagent.com/job_saas-launchpad/artifacts/x9nuwx94_YEYO%20LAB%20Building%20Africa%E2%80%99s%20AI-SaaS%20Exit%20Engine.pdf", "message": "Thank you! Your download will begin shortly."}
 
 # Basic endpoints
 @api_router.get("/")
