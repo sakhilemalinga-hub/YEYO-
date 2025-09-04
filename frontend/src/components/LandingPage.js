@@ -95,12 +95,6 @@ const LandingPage = () => {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-content">
-          <div className="hero-logo">
-            <img 
-              src="https://customer-assets.emergentagent.com/job_saas-launchpad/artifacts/oc7u6unx_YEYO%20LOGO.png" 
-              alt="YEYO LAB" 
-            />
-          </div>
           <div className="hero-text">
             <h1>
               The <span className="highlight">YEYO LAB</span> for SaaS Founders
@@ -119,6 +113,12 @@ const LandingPage = () => {
                 Download the 1-Page Thesis →
               </button>
             </div>
+          </div>
+          <div className="hero-image">
+            <img 
+              src="https://images.unsplash.com/photo-1526560244950-1a3c1ace48f9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwyfHxkaXZlcnNlJTIwYnVzaW5lc3MlMjB0ZWFtfGVufDB8fHx8MTc1NjkyOTM2N3ww&ixlib=rb-4.1.0&q=85" 
+              alt="Diverse team collaboration"
+            />
           </div>
         </div>
       </section>
