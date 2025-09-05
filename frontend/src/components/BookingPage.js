@@ -205,7 +205,7 @@ const BookingPage = () => {
 
           <div style={{ textAlign: 'center', marginTop: '2rem' }}>
             <p style={{ color: '#64748b', marginBottom: '1rem' }}>
-              Questions? Email us at hello@yeyolab.com
+              Questions? Email us at founders@yeyo.co.za
             </p>
             <Link to="/" style={{ color: '#3b82f6' }}>← Back to Home</Link>
           </div>
