@@ -34,8 +34,8 @@ const Profile = () => {
             <p style={{ textAlign: 'center', marginBottom: '2rem', color: '#64748b' }}>
               Please sign in to access your profile.
             </p>
-            <Link to="/" className="btn-primary">
-              Go to Home
+            <Link to="/login" className="btn-primary">
+              Sign In
             </Link>
           </div>
         </div>
@@ -81,11 +81,7 @@ const Profile = () => {
                     User Type
                   </label>
                   <p className="text-lg capitalize">
-                    {user.user_type === 'pending' ? (
-                      <span className="text-orange-600">Registration Pending</span>
-                    ) : (
-                      <span className="text-green-600">{user.user_type}</span>
-                    )}
+                    <span className="text-green-600">{user.user_type}</span>
                   </p>
                 </div>
 
@@ -123,28 +119,26 @@ const Profile = () => {
             </CardContent>
           </Card>
 
-          {user.user_type === 'pending' && (
-            <div style={{ marginTop: '2rem' }}>
-              <Card className="border-orange-200 bg-orange-50">
-                <CardContent className="pt-4">
-                  <h3 className="font-semibold text-orange-800 mb-2">
-                    Complete Your Registration
-                  </h3>
-                  <p className="text-orange-700 mb-4">
-                    Please complete your registration to access all YEYO LAB features.
-                  </p>
-                  <div className="flex gap-2">
-                    <Link to="/register/investor" className="btn-primary">
-                      Register as Investor
-                    </Link>
-                    <Link to="/register/founder" className="btn-secondary">
-                      Register as Founder
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          )}
+          <div style={{ marginTop: '2rem' }}>
+            <Card>
+              <CardContent className="pt-4">
+                <h3 className="font-semibold mb-2">
+                  Update Your Profile
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Complete or update your profile information.
+                </p>
+                <div className="flex gap-2">
+                  <Link to="/register/investor" className="btn-secondary">
+                    Update Investor Profile
+                  </Link>
+                  <Link to="/register/founder" className="btn-secondary">
+                    Update Founder Profile
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
 
           <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', justifyContent: 'center' }}>
             <Link to="/" className="btn-secondary">

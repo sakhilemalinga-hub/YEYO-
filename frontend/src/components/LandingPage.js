@@ -82,16 +82,11 @@ const LandingPage = () => {
             {user ? (
               <>
                 <Link to="/profile" className="btn-secondary">Profile</Link>
-                {user.user_type === 'pending' && (
-                  <>
-                    <Link to="/register/investor" className="btn-primary">Complete Registration</Link>
-                  </>
-                )}
               </>
             ) : (
               <>
-                <button onClick={login} className="btn-secondary">Sign In</button>
-                <Link to="/register/investor" className="btn-primary">Get Started</Link>
+                <Link to="/login" className="btn-secondary">Sign In</Link>
+                <Link to="/register" className="btn-primary">Get Started</Link>
               </>
             )}
           </div>

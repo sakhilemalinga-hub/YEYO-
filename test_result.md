@@ -101,3 +101,86 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
+
+user_problem_statement: "Replace OAuth authentication with simple email/password auth and create proper database setup"
+
+backend:
+  - task: "Replace OAuth with email/password authentication"
+    implemented: false
+    working: "NA"
+    file: "backend/server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Current OAuth system needs to be replaced with simple email/password auth using JWT tokens"
+
+  - task: "Create database initialization script"
+    implemented: false
+    working: "NA"
+    file: "backend/database.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Need to create proper database initialization with collections setup"
+
+  - task: "Add password hashing and JWT token management"
+    implemented: false
+    working: "NA"
+    file: "backend/auth.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Need to implement secure password hashing and JWT token generation/validation"
+
+frontend:
+  - task: "Replace OAuth login with email/password forms"
+    implemented: false
+    working: "NA"
+    file: "frontend/src/App.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Need to replace Google OAuth with simple login/register forms"
+
+  - task: "Update authentication context and API calls"
+    implemented: false
+    working: "NA"
+    file: "frontend/src/components/InvestorRegistration.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Update all auth-related components to use new authentication system"
+
+metadata:
+  created_by: "main_agent"
+  version: "1.0"
+  test_sequence: 0
+  run_ui: false
+
+test_plan:
+  current_focus:
+    - "Replace OAuth with email/password authentication"
+    - "Create database initialization script"
+    - "Add password hashing and JWT token management"
+  stuck_tasks: []
+  test_all: false
+  test_priority: "high_first"
+
+agent_communication:
+  - agent: "main"
+    message: "Starting OAuth replacement and database setup. Will implement JWT-based authentication with email/password login, proper password hashing, and database initialization scripts."
